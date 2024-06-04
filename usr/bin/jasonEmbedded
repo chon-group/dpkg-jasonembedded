@@ -1,2 +1,4 @@
 #!/bin/sh
+DIR=$(dirname "$1")
+cd $DIR
 /usr/bin/java $2 -jar /opt/group.chon/jasonEmbedded/jasonEmbedded.jar $1 -console
