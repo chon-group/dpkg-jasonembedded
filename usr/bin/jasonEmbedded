@@ -1,4 +1,31 @@
 #!/bin/sh
+if [ -z "$1" ] || [ ! -f "$1" ]; then
+    echo "Invalid arguments, consult manual at: https://github.com/chon-group/dpkg-jasonembedded"
+    exit 1
+fi
+
+JASONEMB="/opt/group.chon/jasonEmbedded/jasonEmbedded.jar"
 DIR=$(dirname "$1")
 cd $DIR
-/usr/bin/java $2 -jar /opt/group.chon/jasonEmbedded/jasonEmbedded.jar $1 -console
+
+if [ -z "$2" ]; then
+    JAVA_CMD="/usr/bin/java -jar"
+    OPT="-console"
+else
+    case "$2" in
+        -gui|-console)
+            JAVA_CMD="/usr/bin/java -jar"
+            OPT=$2
+            ;;
+        -Xms*m)
+            JAVA_CMD="/usr/bin/java $2 -jar"
+            OPT="-console"
+            ;;
+        *)
+            echo "Invalid arguments, consult manual at: https://github.com/chon-group/dpkg-jasonembedded"
+            exit 1
+            ;;
+    esac
+fi
+
+$JAVA_CMD $JASONEMB $1 $OPT
