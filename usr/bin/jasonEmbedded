@@ -4,6 +4,10 @@ if [ -z "$1" ] || [ ! -f "$1" ]; then
     exit 1
 fi
 
+### next version?
+# ls /usr/lib/jvm/*21*/bin/java | head -1
+# /usr/lib/jvm/temurin-21-jdk-amd64/bin/java
+
 JASONEMB="/opt/group.chon/jasonEmbedded/jasonEmbedded.jar"
 DIR=$(dirname "$1")
 cd $DIR
