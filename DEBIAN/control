@@ -1,10 +1,10 @@
 Package: jason-embedded
-Version: 25.8.20
+Version: 25.11.13
 Priority:
 Architecture: all
 Essential:
 Depends: 
-Pre-depends: openjdk-21-jdk | temurin-21-jdk
+Pre-depends: openjdk-21-jdk | temurin-21-jdk | bellsoft-java21
 Suggests:
 Installed-Size:
 Maintainer: chon@grupo.cefet-rj.br
