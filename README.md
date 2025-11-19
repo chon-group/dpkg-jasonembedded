@@ -1,6 +1,6 @@
 
 # jasonEmbedded APT package
-|![Capa-pacotes](https://github.com/user-attachments/assets/fea0a8ba-6b95-4f51-ba53-a76bb5b36c6b)|
+|<img width="502" height="523" alt="capa" src="https://github.com/user-attachments/assets/b0127929-a4a2-4c9f-b6bd-0ed8a3414d4c" />|
 |:--:|
 |APT package for Debian, Ubuntu, Mint, and derivatives that provides the [jasonEmbedded](https://github.com/chon-group/jasonEmbedded), a Spin-off Version of Jason for IoT and Embedded Multi-Agent Systems.|
 
