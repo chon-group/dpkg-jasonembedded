@@ -1,13 +1,14 @@
 Package: jason-embedded
-Version: 25.11.19
+Version: 25.12.17
 Priority:
 Architecture: all
 Essential:
-Depends: 
-Pre-depends: openjdk-21-jre-headless | openjdk-21-jre | temurin-21-jre | bellsoft-java21-lite | temurin-17-jre | openjdk-17-jre
+Depends: openjdk-21-jdk | temurin-21-jdk | bellsoft-java21
+Pre-depends:
 Suggests:
 Installed-Size:
-Maintainer: chon@grupo.cefet-rj.br
+Maintainer: Nilson Lazarin <chon@grupo.cefet-rj.br>
+Homepage: https://javino.chon.group/
 Conflicts:
 Replaces:
 Provides:
